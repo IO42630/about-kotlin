@@ -1,5 +1,6 @@
-package com.olexyn.about.java.kotlin.features
+package com.olexyn.about.kotlin.features
 
+import com.olexyn.about.java.kotlin.features.Strings
 import java.util.*
 
 class Functions {
@@ -37,11 +38,13 @@ class ScopedFunctions {
 }
 
 fun main() {
-    val a1: String? = null
-    val a2 = a1?.let { println("hello") }
-    var a3: String
-    a3 = a1?.let { a3 = "value" }.toString()
-    a3 = a1 ?: "value"
+
+    // let is a scoping function, it allows to execute a block of code on an object
+    "foo".let { println(it) } // prints "foo"
+    null.let { println(it) } // prints "null"
+    // together with ? it can be used to perform an "if present, then do" operation
+    null?.let { println("" + it) }  // prints nothing
+    "bar"?.let { println(it) } // prints "bar"
 
     mutableListOf<String>()
             .apply { add("A") }

@@ -1,4 +1,4 @@
-package com.olexyn.about.java.kotlin
+package com.olexyn.about.kotlin.features
 
 // Disables the default constructor.
 class Constructors1(var aString: String) {

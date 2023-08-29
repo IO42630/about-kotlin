@@ -1,4 +1,4 @@
-package com.olexyn.about.java.kotlin.features
+package com.olexyn.about.kotlin.features
 
 class Collections {
 
